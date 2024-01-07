@@ -1,7 +1,7 @@
 # JavaScript Practice Project
 ## Welcome to my JavaScript practice project! 🚀
 
-## Introduction
+### Introduction
 This repository serves as a personal playground for honing my JavaScript skills by implementing functions inspired by the awesome Lodash library. The goal is to gain a deeper understanding of common programming tasks and enhance my proficiency in JavaScript.
 
 ## Features
