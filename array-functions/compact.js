@@ -17,3 +17,6 @@ const arrayCompact = (arr) => {
 };
 
 arrayCompact([0, 1, false, 2, "", NaN, 3, 4, 5]);
+
+// final output
+// [ 1, 2, 3, 4, 5 ]
