@@ -65,8 +65,9 @@ cityFoods[Symbol.iterator] = () => {
       // Returning the default action with iterated value
       const value =
         currentFavouriteFoodIndex === 0
-          ? `${currentCity}:\n  - ${favouriteFoods[currentFavouriteFoodIndex++]
-          }`
+          ? `${currentCity}:\n  - ${
+              favouriteFoods[currentFavouriteFoodIndex++]
+            }`
           : `  - ${favouriteFoods[currentFavouriteFoodIndex++]}`;
       return { value, done: false };
     },
@@ -77,6 +78,7 @@ cityFoods[Symbol.iterator] = () => {
 
 // Our custom iterator is ready, now we can iterate over our nested object
 const timeStart = Date.now();
+
 for (const favouriteFood of cityFoods) {
   console.log(favouriteFood);
 }
@@ -111,6 +113,7 @@ console.log(`\nTime taken in iterator function\n: ${timeEnd - timeStart}ms`);
 
 // Iterate through the nested object
 const timeStartE6For = Date.now();
+
 for (const [city, foodData] of Object.entries(cityFoods)) {
   console.log(`City: ${city}`);
 
@@ -118,9 +121,12 @@ for (const [city, foodData] of Object.entries(cityFoods)) {
     console.log(`  - ${foodName}`);
   }
 }
+
 const timeEndE6For = Date.now();
 
-console.log(`\nTime taken in simple for loop\n: ${timeEndE6For - timeStartE6For}ms`);
+console.log(
+  `\nTime taken in simple for loop\n: ${timeEndE6For - timeStartE6For}ms`
+);
 
 // Output will be:
 
